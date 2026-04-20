@@ -508,13 +508,42 @@
     <i class="fab fa-whatsapp"></i>
 </a>
 
+<a href="#contact" class="chat-float-right">
+    <i class="fas fa-comments"></i>
+</a>
+
+<style>
+    .chat-float-right {
+    position: fixed;
+    bottom: 25px;
+    right: 25px; /* 👈 right corner */
+    background: var(--accent);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: white;
+    z-index: 1000;
+    text-decoration: none;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    transition: 0.3s;
+}
+
+.chat-float-right:hover {
+    transform: scale(1.1);
+}
+</style>
+
 <header>
     <div class="container nav-bar">
         <div class="logo reveal"><img src="https://lirp.cdn-website.com/3ef302d5/dms3rep/multi/opt/Simon+Junk+Removal+logo+red-1920w.png" alt="Simon Junk Removal"></div>
         <div class="nav-links reveal">
             <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
         </div>
-        <div class="reveal"><a href="#contact" class="btn-accent">🚛 Free Quote</a></div>
+        <div class="reveal"><a href="#contact" class="btn-accent"> Free Quote</a></div>
     </div>
 </header>
 
@@ -522,18 +551,18 @@
     <section id="home" class="hero">
         <div class="container hero-grid">
             <div class="reveal">
-                <div class="hero-badge">✨ Eco-Friendly Junk Removal</div>
+                <div class="hero-badge"> Eco-Friendly Junk Removal</div>
                 <h1>Your Space,<br><span style="color:var(--accent);">Our Mission</span> to Clean</h1>
                 <p style="font-size:1.1rem; margin: 20px 0;">Same-day service • Upfront pricing • 100% eco-friendly disposal</p>
-                <a href="#contact" class="btn-accent" style="padding:12px 32px;">📦 Get Free Estimate</a>
+                <a href="#contact" class="btn-accent" style="padding:12px 32px;"> Get Free Estimate</a>
                 <div class="hero-stats">
-                    <div class="stat-card">🏠 3500+ Projects</div>
-                    <div class="stat-card">♻️ 96% Recycled</div>
-                    <div class="stat-card">⭐ 5.0 Rating</div>
+                    <div class="stat-card"> 3500+ Projects</div>
+                    <div class="stat-card"> 96% Recycled</div>
+                    <div class="stat-card"> 5.0 Rating</div>
                 </div>
             </div>
             <div class="reveal">
-                <img src="https://images.pexels.com/photos/4107306/pexels-photo-4107306.jpeg?w=550&h=420&fit=crop" style="border-radius: 40px; width:100%; max-width:500px; box-shadow: 0 20px 40px rgba(0,0,0,0.2);" alt="Junk removal">
+                <img src="./01.webp" style="border-radius: 40px; width:100%; max-width:500px; box-shadow: 0 20px 40px rgba(0,0,0,0.2);" alt="Junk removal">
             </div>
         </div>
     </section>
@@ -546,8 +575,8 @@
                 <div class="service-tile reveal"><i class="fas fa-car"></i><h3>Garage Cleanout</h3><p>Old furniture, tools, boxes — gone fast</p><div style="color:var(--accent);">same-day available</div></div>
                 <div class="service-tile reveal"><i class="fas fa-hand-holding-heart"></i><h3>Hoarder Cleanout</h3><p>Compassionate, discreet, professional</p></div>
                 <div class="service-tile reveal"><i class="fas fa-building"></i><h3>Eviction Cleanout</h3><p>Fast property turnaround for landlords</p></div>
-                <div class="service-tile reveal"><i class="fas fa-hammer"></i><h3>Demolition Hauling</h3><p>Debris removal after light demolition</p></div>
-                <div class="service-tile reveal"><i class="fas fa-tree"></i><h3>Estate Cleanout</h3><p>Respectful with donation & recycling</p></div>
+                <!-- <div class="service-tile reveal"><i class="fas fa-hammer"></i><h3>Demolition Hauling</h3><p>Debris removal after light demolition</p></div> -->
+                <!-- <div class="service-tile reveal"><i class="fas fa-tree"></i><h3>Estate Cleanout</h3><p>Respectful with donation & recycling</p></div> -->
             </div>
         </div>
     </section>
@@ -556,10 +585,10 @@
         <div class="container">
             <h2 class="section-title reveal">Simple <span>4 Steps</span></h2>
             <div class="process-timeline">
-                <div class="timeline-step reveal"><div class="step-circle">1</div><h3>📞 Free Quote</h3><p>Call or message us</p></div>
-                <div class="timeline-step reveal"><div class="step-circle">2</div><h3>📅 Schedule</h3><p>Pick your time</p></div>
-                <div class="timeline-step reveal"><div class="step-circle">3</div><h3>💪 We Haul</h3><p>We do all lifting</p></div>
-                <div class="timeline-step reveal"><div class="step-circle">4</div><h3>♻️ Green Disposal</h3><p>Donate & recycle</p></div>
+                <div class="timeline-step reveal"><div class="step-circle">1</div><h3> Free Quote</h3><p>Call or message us</p></div>
+                <div class="timeline-step reveal"><div class="step-circle">2</div><h3> Schedule</h3><p>Pick your time</p></div>
+                <div class="timeline-step reveal"><div class="step-circle">3</div><h3> We Haul</h3><p>We do all lifting</p></div>
+                <div class="timeline-step reveal"><div class="step-circle">4</div><h3> Green Disposal</h3><p>Donate & recycle</p></div>
             </div>
         </div>
     </section>
@@ -571,6 +600,11 @@
                 <div class="service-tile reveal"><i class="fas fa-bolt"></i><h3>Lightning Fast</h3><p>Arrive within 1-2 hours for urgent jobs</p></div>
                 <div class="service-tile reveal"><i class="fas fa-dollar-sign"></i><h3>No Hidden Fees</h3><p>Upfront pricing you see before we start</p></div>
                 <div class="service-tile reveal"><i class="fas fa-leaf"></i><h3>Eco-First</h3><p>90%+ recycled or donated to charities</p></div>
+                <div class="service-tile reveal">
+    <i class="fas fa-shield-alt"></i>
+    <h3>Fully Insured</h3>
+    <p>Your property is 100% safe with our licensed team</p>
+</div>
             </div>
         </div>
     </section>
@@ -580,12 +614,12 @@
         <div class="container">
             <h2 class="section-title reveal">Project <span>Gallery</span></h2>
             <div class="gallery-grid">
-                <div class="gallery-item reveal"><img src="https://images.pexels.com/photos/4107304/pexels-photo-4107304.jpeg?w=400&h=250&fit=crop" alt="Garage"><div class="gallery-item-info"><h4>Garage Cleanout</h4><p>3 tons removed</p></div></div>
-                <div class="gallery-item reveal"><img src="https://images.pexels.com/photos/4107311/pexels-photo-4107311.jpeg?w=400&h=250&fit=crop" alt="House"><div class="gallery-item-info"><h4>Full House Estate</h4><p>Donated 45%</p></div></div>
-                <div class="gallery-item reveal"><img src="https://images.pexels.com/photos/4107316/pexels-photo-4107316.jpeg?w=400&h=250&fit=crop" alt="Demolition"><div class="gallery-item-info"><h4>Demolition Hauling</h4><p>Shed + debris</p></div></div>
-                <div class="gallery-item reveal"><img src="https://images.pexels.com/photos/4107309/pexels-photo-4107309.jpeg?w=400&h=250&fit=crop" alt="Eviction"><div class="gallery-item-info"><h4>Eviction Cleanout</h4><p>48h turnaround</p></div></div>
-                <div class="gallery-item reveal"><img src="https://images.pexels.com/photos/4107310/pexels-photo-4107310.jpeg?w=400&h=250&fit=crop" alt="Estate"><div class="gallery-item-info"><h4>Estate Cleanout</h4><p>Green disposal</p></div></div>
-                <div class="gallery-item reveal"><img src="https://images.pexels.com/photos/4107316/pexels-photo-4107316.jpeg?w=400&h=250&fit=crop" alt="Hoarder"><div class="gallery-item-info"><h4>Hoarder Cleanout</h4><p>Compassionate care</p></div></div>
+                <div class="gallery-item reveal"><img src="./02.jpeg" alt="Garage"><div class="gallery-item-info"><h4>Garage Cleanout</h4><p>3 tons removed</p></div></div>
+                <div class="gallery-item reveal"><img src="./03.jpeg" alt="House"><div class="gallery-item-info"><h4>Full House Estate</h4><p>Donated 45%</p></div></div>
+                <div class="gallery-item reveal"><img src="./04.jpeg" alt="Demolition"><div class="gallery-item-info"><h4>Demolition Hauling</h4><p>Shed + debris</p></div></div>
+                <!-- <div class="gallery-item reveal"><img src="./05.jpeg" alt="Eviction"><div class="gallery-item-info"><h4>Eviction Cleanout</h4><p>48h turnaround</p></div></div> -->
+                <!-- <div class="gallery-item reveal"><img src="./06.jpeg" alt="Estate"><div class="gallery-item-info"><h4>Estate Cleanout</h4><p>Green disposal</p></div></div> -->
+                <!-- <div class="gallery-item reveal"><img src="./02.jpeg" alt="Hoarder"><div class="gallery-item-info"><h4>Hoarder Cleanout</h4><p>Compassionate care</p></div></div> -->
             </div>
         </div>
     </section>
@@ -648,7 +682,7 @@
             <div class="footer-col"><h4>Services</h4><a href="#">House Cleanout</a><a href="#">Garage Cleanout</a><a href="#">Estate Cleanout</a><a href="#">Demolition Hauling</a></div>
             <div class="footer-col"><h4>Hours</h4><p>Mon-Fri: 7am - 7pm</p><p>Saturday: 8am - 5pm</p><p>Sunday: Closed</p><p>Emergency: 24/7</p></div>
         </div>
-        <div class="copyright"><p>© 2025 Simon Junk Removal. All rights reserved. | Eco-friendly junk removal | License #JR-2847-NJ</p><p>♻️ We recycle. We donate. We care about our planet.</p></div>
+        <div class="copyright"><p>© 2025 Simon Junk Removal. All rights reserved. | Eco-friendly junk removal | License #JR-2847-NJ</p><p> We recycle. We donate. We care about our planet.</p></div>
     </div>
 </footer>
 
